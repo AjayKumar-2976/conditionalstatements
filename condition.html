@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+//CONDITIONAL STATEMENTS
+
+
+let year = prompt("enter the year")
+    if(year%4 == 0 || year%400 == 0){
+        console.log("its a leap year");
+        
+    }
+    else{
+        console.log("not a leap year");
+    }
+
+
+    let side1 = prompt("enter value for side1")
+    let side2 = prompt("enter  value for side2")
+    let side3 = prompt("enter value for side3")
+
+    if(side1===side2 && side2===side3 & side1===side3){
+        console.log("equilateral triangle");
+        
+    }
+    else if (side1 === side2 || side1 === side3 || side2 === side3) {
+        console.log("An isosceles triangle");
+        
+    }
+    else if (side1 !== side2 && side2 !== side3 && side1 !== side3) {
+        console.log("scalene triangle");
+        
+    }
+    else{
+        console.log("invalid");
+
+
+
+        
+    }
+
+    let score = prompt("enter the score")
+    if(score >=90){
+        console.log("GRADE A");
+        
+    }
+    else if(score <= 89 && score>=80 ){
+    console.log("GRADE B");
+    
+    }
+    
+    else if(score <= 79 && score>=70 ){
+        console.log("GRADE C");
+        
+    }
+    
+    else if(score <= 69 && score>=60 ){
+        console.log("GRADE D");
+        
+    }
+    else{
+        console.log("fail");
+        
+    }
+
+    let num1=prompt("enter the num1")
+    let num2=prompt("enter the num2")
+    let num3=prompt("enter the num3")
+    if(num1>num2 && num1>num3){
+        console.log(`the largest number is ${num1}`);
+        
+    }
+    
+    else if(num2>num1 && num2>num3){
+        console.log(`the largest number is ${num2}`);
+        
+    }
+    
+    else if(num3>num2 && num3>num1){
+        console.log(`the largest number is ${num3}`);
+        
+    }
+</script>
+</html>
